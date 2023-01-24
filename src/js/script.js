@@ -35,8 +35,8 @@
   const favoriteBooks = [];
 
   function initActions() {
-    const bookList = document.querySelector(select.containerOf.booksList);
-    bookList.addEventListener('dblclick', function (event) {
+    const booksList = document.querySelector(select.containerOf.booksList);
+    booksList.addEventListener('dblclick', function (event) {
       event.preventDefault();
       const clickOnBook = event.target;
       if (clickOnBook.offsetParent.classList.contains('book__image')) {
@@ -52,6 +52,7 @@
       }
     });
   }
+  
   render();
   initActions();
 }
